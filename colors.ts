@@ -2,6 +2,7 @@ export const PRIMARY_BLUE = '#303193';
 export const SECONDARY_BLUE = '#3A66E3';
 export const GRAYISH_BLUE = '#D8E7F2'; // line-light-mode
 export const LIGHT_BLUE = '#EEF4FB';
+export const LIGHT_BLUE_OPACITY_50 = 'rgba(238, 244, 251, 0.5)';
 
 export const WHITE = '#FFFFFF';
 export const WHITE_TRANSPARENT = 'rgba(255,255,255,0.0)';
@@ -16,6 +17,8 @@ export const REALLY_WARM = '#FEE9B7';
 export const HOT = '#FDDCB6';
 
 export const BLACK = '#000000';
+export const GRAY_10 = '#2C2F32';
+export const GRAY_9 = '#868686';
 export const GRAY_8 = '#E6E6E6';
 export const GRAY_7 = '#101113';
 export const GRAY_6 = '#191B22';
@@ -28,8 +31,13 @@ export const GRAY_1 = '#898D9B';
 export const GRAY_1_OPACITY = 'rgba(142,142,147,0.08)';
 export const GRAY_1_OPACITY_15 = 'rgba(142,142,147,0.15)';
 
+export const GRAY_4_OPACITY_50 = 'rgba(53, 57, 68, 0.5)';
+
 export const GRAY_6_TRANSPARENT = 'rgba(28,28,30,0.0)';
 export const GRAY_6_95 = 'rgba(28,28,30,0.95)';
+
+export const GRAY_9_OPACITY_10 ='rgba(134, 134, 134, 0.10)';
+export const GRAY_10_OPACITY_60 ='rgba(44, 47, 50, 0.60)';
 
 export const BLACK_OPACITY = 'rgba(0,0,0,0.07)';
 export const BLACK_TRANSPARENT = 'rgba(0,0,0,0.0)';
@@ -186,6 +194,7 @@ export type CustomTheme = {
     listTint: string;
     rain: Rain;
     accordionContentBackground: string;
+    modalBackground: string;
   };
 };
 

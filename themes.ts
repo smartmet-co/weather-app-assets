@@ -3,7 +3,9 @@ import {
   SECONDARY_BLUE,
   GRAYISH_BLUE,
   LIGHT_BLUE,
+  LIGHT_BLUE_OPACITY_50,
   WHITE,
+  GRAY_9,
   GRAY_8,
   GRAY_7,
   GRAY_6,
@@ -27,6 +29,9 @@ import {
   RAIN_7,
   RAIN_8,
   TRANSPARENT,
+  GRAY_9_OPACITY_10,
+  GRAY_10_OPACITY_60,
+  GRAY_4_OPACITY_50,
 } from '@assets/colors';
 
 export const lightTheme = {
@@ -40,7 +45,7 @@ export const lightTheme = {
     primaryText: BLACK,
     secondaryText: GRAY_3,
     border: GRAYISH_BLUE,
-    inputBackground: LIGHT_BLUE,
+    inputBackground: LIGHT_BLUE_OPACITY_50,
     inputButtonBackground: WHITE,
     mapButtonBackground: WHITE,
     relocateButtonBackground: SECONDARY_BLUE,
@@ -49,7 +54,7 @@ export const lightTheme = {
     timeStepBackground: LIGHT_BLUE,
     shadow: SHADOW_LIGHT,
     screenBackground: LIGHT_BLUE,
-    cardHeader: PRIMARY_BLUE,
+    cardHeader: GRAY_9_OPACITY_10,
     cardShadow: GRAYISH_BLUE,
     warningsIconFill: PRIMARY_BLUE,
     selectedDayBackground: LIGHT_BLUE,
@@ -76,6 +81,8 @@ export const lightTheme = {
       8: RAIN_8,
     },
     accordionContentBackground: 'rgb(246,249,253)',
+    modalBackground: WHITE,
+    selectedButton: WHITE,
   },
 };
 
@@ -90,7 +97,7 @@ export const darkTheme = {
     primaryText: WHITE,
     secondaryText: GRAY_1,
     border: GRAY_3,
-    inputBackground: GRAY_4,
+    inputBackground: GRAY_4_OPACITY_50,
     inputButtonBackground: GRAY_5,
     mapButtonBackground: GRAY_6_95,
     relocateButtonBackground: GRAY_6,
@@ -99,7 +106,7 @@ export const darkTheme = {
     timeStepBackground: GRAY_6,
     shadow: SHADOW_DARK,
     screenBackground: GRAY_7,
-    cardHeader: GRAY_3,
+    cardHeader: GRAY_10_OPACITY_60,
     cardShadow: BLACK,
     warningsIconFill: BLACK,
     selectedDayBackground: GRAY_4,
@@ -126,5 +133,7 @@ export const darkTheme = {
       8: RAIN_8,
     },
     accordionContentBackground: 'rgb(246,249,253)',
+    modalBackground: 'rgb(25,25,25)',
+    selectedButton: BLACK,
   },
 };
