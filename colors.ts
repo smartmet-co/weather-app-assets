@@ -195,6 +195,7 @@ export type CustomTheme = {
     rain: Rain;
     accordionContentBackground: string;
     modalBackground: string;
+    selectedButton: string;
   };
 };
 
