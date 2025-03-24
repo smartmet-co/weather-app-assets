@@ -1,4 +1,5 @@
 import { ImageSourcePropType } from "react-native";
+import { FullWindowOverlay } from "react-native-screens";
 
 export const backgroundsLight: WeatherBackground = {
   '1': {
@@ -365,6 +366,19 @@ export const backgroundsDark: WeatherBackground = {
     day: require('./dark/77.jpg'),
     night: require('./dark/177.jpg'),
   },
+};
+
+export const sunBackground:ImageSourcePropType = require('./sun.jpg');
+
+export const moonPhaseImages = {
+  newMoon: require('./new_moon.jpg'),
+  waxingCrescent: require('./waxing_crescent.jpg'),
+  firstQuarter: require('./first_quarter.jpg'),
+  waxingGibbous: require('./waxing_gibbous.jpg'),
+  fullMoon: require('./full_moon.jpg'),
+  waningGibbous: require('./waning_gibbous.jpg'),
+  lastQuarter: require('./last_quarter.jpg'),
+  waningCrescent: require('./waning_crescent.jpg'),
 };
 
 export type WeatherBackground = {
