@@ -128,35 +128,35 @@ export const backgroundsLight: WeatherBackground = {
   },
   '52': {
     day: require('./light/52.jpg'),
-    night: require('./light/missing.jpg'),
+    night: require('./light/152.jpg'),
   },
   '53': {
     day: require('./light/53.jpg'),
-    night: require('./light/missing.jpg'),
+    night: require('./light/153.jpg'),
   },
   '54': {
     day: require('./light/54.jpg'),
-    night: require('./light/missing.jpg'),
+    night: require('./light/154.jpg'),
   },
   '55': {
     day: require('./light/55.jpg'),
-    night: require('./light/missing.jpg'),
+    night: require('./light/155.jpg'),
   },
   '56': {
     day: require('./light/56.jpg'),
-    night: require('./light/missing.jpg'),
+    night: require('./light/156.jpg'),
   },
   '57': {
     day: require('./light/57.jpg'),
-    night: require('./light/missing.jpg'),
+    night: require('./light/157.jpg'),
   },
   '58': {
     day: require('./light/58.jpg'),
-    night: require('./light/missing.jpg'),
+    night: require('./light/158.jpg'),
   },
   '59': {
     day: require('./light/59.jpg'),
-    night: require('./light/missing.jpg'),
+    night: require('./light/159.jpg'),
   },
   '61': {
     day: require('./light/61.jpg'),
@@ -176,11 +176,15 @@ export const backgroundsLight: WeatherBackground = {
   },
   '74': {
     day: require('./light/74.jpg'),
-    night: require('./light/missing.jpg'),
+    night: require('./light/174.jpg'),
   },
   '77': {
     day: require('./light/77.jpg'),
-    night: require('./light/missing.jpg'),
+    night: require('./light/177.jpg'),
+  },
+  'aurora': {
+    day: require('./light/aurora.jpg'),
+    night: require('./light/aurora.jpg'),
   },
 };
 
@@ -307,40 +311,40 @@ export const backgroundsDark: WeatherBackground = {
     night: require('./dark/149.jpg'),
   },
   '51': {
-    day: require('./dark/missing.jpg'),
-    night: require('./dark/missing.jpg'),
+    day: require('./dark/51.jpg'),
+    night: require('./dark/151.jpg'),
   },
   '52': {
-    day: require('./dark/missing.jpg'),
-    night: require('./dark/missing.jpg'),
+    day: require('./dark/52.jpg'),
+    night: require('./dark/152.jpg'),
   },
   '53': {
-    day: require('./dark/missing.jpg'),
-    night: require('./dark/missing.jpg'),
+    day: require('./dark/53.jpg'),
+    night: require('./dark/153.jpg'),
   },
   '54': {
-    day: require('./dark/missing.jpg'),
-    night: require('./dark/missing.jpg'),
+    day: require('./dark/54.jpg'),
+    night: require('./dark/154.jpg'),
   },
   '55': {
-    day: require('./dark/missing.jpg'),
-    night: require('./dark/missing.jpg'),
+    day: require('./dark/55.jpg'),
+    night: require('./dark/155.jpg'),
   },
   '56': {
-    day: require('./dark/missing.jpg'),
-    night: require('./dark/missing.jpg'),
+    day: require('./dark/56.jpg'),
+    night: require('./dark/156.jpg'),
   },
   '57': {
-    day: require('./dark/missing.jpg'),
-    night: require('./dark/missing.jpg'),
+    day: require('./dark/57.jpg'),
+    night: require('./dark/157.jpg'),
   },
   '58': {
-    day: require('./dark/missing.jpg'),
-    night: require('./dark/missing.jpg'),
+    day: require('./dark/58.jpg'),
+    night: require('./dark/158.jpg'),
   },
   '59': {
-    day: require('./dark/missing.jpg'),
-    night: require('./dark/missing.jpg'),
+    day: require('./dark/59.jpg'),
+    night: require('./dark/159.jpg'),
   },
   '61': {
     day: require('./dark/61.jpg'),
@@ -365,6 +369,10 @@ export const backgroundsDark: WeatherBackground = {
   '77': {
     day: require('./dark/77.jpg'),
     night: require('./dark/177.jpg'),
+  },
+  'aurora': {
+    day: require('./dark/aurora.jpg'),
+    night: require('./dark/aurora.jpg'),
   },
 };
 
@@ -401,6 +409,11 @@ export const weatherBackgroundKeyParser = (key: string) => {
 
 export const weatherBackgroundGetter = (key: string, dark: boolean) => {
   const symbolSet = dark ? backgroundsDark : backgroundsLight;
+
+  if (key === 'aurora') {
+    return symbolSet.aurora.night;
+  }
+
   const parsedKey = weatherBackgroundKeyParser(key);
 
   // TODO: fix
