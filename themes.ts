@@ -83,6 +83,7 @@ export const lightTheme = {
     accordionContentBackground: 'rgb(246,249,253)',
     modalBackground: WHITE,
     selectedButton: WHITE,
+    warningCard: '#E8EFF5',
   },
 };
 
@@ -135,5 +136,6 @@ export const darkTheme = {
     accordionContentBackground: 'rgb(246,249,253)',
     modalBackground: 'rgb(25,25,25)',
     selectedButton: BLACK,
+    warningCard: GRAY_6,
   },
 };

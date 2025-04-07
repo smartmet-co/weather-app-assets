@@ -196,6 +196,7 @@ export type CustomTheme = {
     accordionContentBackground: string;
     modalBackground: string;
     selectedButton: string;
+    warningCard: string;
   };
 };
 
