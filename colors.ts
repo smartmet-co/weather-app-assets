@@ -17,6 +17,7 @@ export const REALLY_WARM = '#FEE9B7';
 export const HOT = '#FDDCB6';
 
 export const BLACK = '#000000';
+export const GRAY_11 = '#F5F5F5';
 export const GRAY_10 = '#2C2F32';
 export const GRAY_9 = '#868686';
 export const GRAY_8 = '#E6E6E6';
