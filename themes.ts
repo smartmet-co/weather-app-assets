@@ -32,6 +32,7 @@ import {
   GRAY_9_OPACITY_10,
   GRAY_10_OPACITY_60,
   GRAY_4_OPACITY_50,
+  MEDIUM_BLUE,
 } from '@assets/colors';
 
 export const lightTheme = {
@@ -84,6 +85,7 @@ export const lightTheme = {
     modalBackground: WHITE,
     selectedButton: WHITE,
     warningCard: '#E8EFF5',
+    warningCardBorder: MEDIUM_BLUE,
   },
 };
 
@@ -137,5 +139,6 @@ export const darkTheme = {
     modalBackground: 'rgb(25,25,25)',
     selectedButton: BLACK,
     warningCard: GRAY_6,
+    warningCardBorder: GRAY_4,
   },
 };

@@ -3,6 +3,7 @@ export const SECONDARY_BLUE = '#3A66E3';
 export const GRAYISH_BLUE = '#D8E7F2'; // line-light-mode
 export const LIGHT_BLUE = '#EEF4FB';
 export const LIGHT_BLUE_OPACITY_50 = 'rgba(238, 244, 251, 0.5)';
+export const MEDIUM_BLUE = '#93B8D1';
 
 export const WHITE = '#FFFFFF';
 export const WHITE_TRANSPARENT = 'rgba(255,255,255,0.0)';
@@ -198,6 +199,7 @@ export type CustomTheme = {
     modalBackground: string;
     selectedButton: string;
     warningCard: string;
+    warningCardBorder: string;
   };
 };
 
