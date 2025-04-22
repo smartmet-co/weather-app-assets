@@ -377,6 +377,7 @@ export const backgroundsDark: WeatherBackground = {
 };
 
 export const sunBackground:ImageSourcePropType = require('./sun.jpg');
+export const sunBackgroundDark:ImageSourcePropType = require('./sun-dark.jpg');
 
 export const moonPhaseImages = {
   newMoon: require('./new_moon.jpg'),
