@@ -37,6 +37,7 @@ import {
 
 export const lightTheme = {
   dark: false,
+  blue: false,
   colors: {
     primary: SECONDARY_BLUE,
     background: WHITE,
@@ -91,6 +92,7 @@ export const lightTheme = {
 
 export const darkTheme = {
   dark: true,
+  blue: false,
   colors: {
     primary: WHITE,
     background: BLACK,
@@ -114,7 +116,7 @@ export const darkTheme = {
     warningsIconFill: BLACK,
     selectedDayBackground: GRAY_4,
     chartPrimaryLine: CHART_BLUE,
-    chartSecondaryLine: GRAYISH_BLUE, // TODO: needs design
+    chartSecondaryLine: GRAYISH_BLUE,
     chartGrid: GRAY_3,
     chartGridDay: WHITE,
     hourListText: WHITE,
@@ -140,5 +142,60 @@ export const darkTheme = {
     selectedButton: BLACK,
     warningCard: GRAY_6,
     warningCardBorder: GRAY_4,
+  },
+};
+
+export const blueTheme = {
+  dark: true,
+  blue: true,
+  colors: {
+    primary: WHITE,
+    background: '#0F0F2D',
+    card: GRAY_7,
+    text: WHITE,
+    notification: WHITE,
+    primaryText: WHITE,
+    secondaryText: GRAY_1,
+    border: '#BDD7E9',
+    inputBackground: GRAY_4_OPACITY_50,
+    inputButtonBackground: GRAY_5,
+    mapButtonBackground: GRAY_6_95,
+    relocateButtonBackground: GRAY_6,
+    mapButtonBorder: GRAY_7,
+    headerBackground: GRAY_6,
+    timeStepBackground: GRAY_6,
+    shadow: SHADOW_DARK,
+    screenBackground: GRAY_7,
+    cardHeader: 'rgba(21, 24, 58, 0.4)',
+    cardShadow: BLACK,
+    warningsIconFill: BLACK,
+    selectedDayBackground: GRAY_4,
+    chartPrimaryLine: CHART_BLUE,
+    chartSecondaryLine: GRAYISH_BLUE,
+    chartGrid: GRAY_3,
+    chartGridDay: WHITE,
+    hourListText: WHITE,
+    secondaryBorder: GRAY_1,
+    tabBarInactive: WHITE,
+    tabBarActive: '#00D7FF',
+    timeSliderObservationText: GRAY_1,
+    timeSliderTick: GRAY_1,
+    listTint: GRAY_1_OPACITY,
+    rain: {
+      0: TRANSPARENT,
+      1: RAIN_1,
+      2: RAIN_2,
+      3: RAIN_3,
+      4: RAIN_4,
+      5: RAIN_5,
+      6: RAIN_6,
+      7: RAIN_7,
+      8: RAIN_8,
+    },
+    accordionContentBackground: 'rgb(246,249,253)',
+    modalBackground: '#1F2060',
+    selectedButton: '#1F2060',
+    warningCard: 'rgba(76, 76, 103, 0.6)',
+    warningCardBorder: 'rgb(147, 184, 209)',
   },
 };

@@ -161,6 +161,7 @@ export type Rain = {
 
 export type CustomTheme = {
   dark: boolean;
+  blue: boolean;
   colors: {
     primary: string;
     background: string;

@@ -188,7 +188,6 @@ export const backgroundsLight: WeatherBackground = {
   },
 };
 
-
 export const backgroundsDark: WeatherBackground = {
   '1': {
     day: require('./dark/1.jpg'),
@@ -376,6 +375,193 @@ export const backgroundsDark: WeatherBackground = {
   },
 };
 
+export const backgroundsBlue: WeatherBackground = {
+  '1': {
+    day: require('./blue/1.jpg'),
+    night: require('./blue/101.jpg'),
+  },
+  '2': {
+    day: require('./blue/2.jpg'),
+    night: require('./blue/102.jpg'),
+  },
+  '4': {
+    day: require('./blue/4.jpg'),
+    night: require('./blue/104.jpg'),
+  },
+  '6': {
+    day: require('./blue/6.jpg'),
+    night: require('./blue/106.jpg'),
+  },
+  '7': {
+    day: require('./blue/7.jpg'),
+    night: require('./blue/107.jpg'),
+  },
+  '9': {
+    day: require('./blue/9.jpg'),
+    night: require('./blue/109.jpg'),
+  },
+  '11': {
+    day: require('./blue/11.jpg'),
+    night: require('./blue/111.jpg'),
+  },
+  '14': {
+    day: require('./blue/14.jpg'),
+    night: require('./blue/114.jpg'),
+  },
+  '17': {
+    day: require('./blue/17.jpg'),
+    night: require('./blue/117.jpg'),
+  },
+  '21': {
+    day: require('./blue/21.jpg'),
+    night: require('./blue/121.jpg'),
+  },
+  '24': {
+    day: require('./blue/24.jpg'),
+    night: require('./blue/124.jpg'),
+  },
+  '27': {
+    day: require('./blue/27.jpg'),
+    night: require('./blue/127.jpg'),
+  },
+  '31': {
+    day: require('./blue/31.jpg'),
+    night: require('./blue/131.jpg'),
+  },
+  '32': {
+    day: require('./blue/32.jpg'),
+    night: require('./blue/132.jpg'),
+  },
+  '33': {
+    day: require('./blue/33.jpg'),
+    night: require('./blue/133.jpg'),
+  },
+  '34': {
+    day: require('./blue/34.jpg'),
+    night: require('./blue/134.jpg'),
+  },
+  '35': {
+    day: require('./blue/35.jpg'),
+    night: require('./blue/135.jpg'),
+  },
+  '36': {
+    day: require('./blue/36.jpg'),
+    night: require('./blue/136.jpg'),
+  },
+  '37': {
+    day: require('./blue/37.jpg'),
+    night: require('./blue/137.jpg'),
+  },
+  '38': {
+    day: require('./blue/38.jpg'),
+    night: require('./blue/138.jpg'),
+  },
+  '39': {
+    day: require('./blue/39.jpg'),
+    night: require('./blue/139.jpg'),
+  },
+  '41': {
+    day: require('./blue/41.jpg'),
+    night: require('./blue/141.jpg'),
+  },
+  '42': {
+    day: require('./blue/42.jpg'),
+    night: require('./blue/142.jpg'),
+  },
+  '43': {
+    day: require('./blue/43.jpg'),
+    night: require('./blue/143.jpg'),
+  },
+  '44': {
+    day: require('./blue/44.jpg'),
+    night: require('./blue/144.jpg'),
+  },
+  '45': {
+    day: require('./blue/45.jpg'),
+    night: require('./blue/145.jpg'),
+  },
+  '46': {
+    day: require('./blue/46.jpg'),
+    night: require('./blue/146.jpg'),
+  },
+  '47': {
+    day: require('./blue/47.jpg'),
+    night: require('./blue/147.jpg'),
+  },
+  '48': {
+    day: require('./blue/48.jpg'),
+    night: require('./blue/148.jpg'),
+  },
+  '49': {
+    day: require('./blue/49.jpg'),
+    night: require('./blue/149.jpg'),
+  },
+  '51': {
+    day: require('./blue/51.jpg'),
+    night: require('./blue/151.jpg'),
+  },
+  '52': {
+    day: require('./blue/52.jpg'),
+    night: require('./blue/152.jpg'),
+  },
+  '53': {
+    day: require('./blue/53.jpg'),
+    night: require('./blue/153.jpg'),
+  },
+  '54': {
+    day: require('./blue/54.jpg'),
+    night: require('./blue/154.jpg'),
+  },
+  '55': {
+    day: require('./blue/55.jpg'),
+    night: require('./blue/155.jpg'),
+  },
+  '56': {
+    day: require('./blue/56.jpg'),
+    night: require('./blue/156.jpg'),
+  },
+  '57': {
+    day: require('./blue/57.jpg'),
+    night: require('./blue/157.jpg'),
+  },
+  '58': {
+    day: require('./blue/58.jpg'),
+    night: require('./blue/158.jpg'),
+  },
+  '59': {
+    day: require('./blue/59.jpg'),
+    night: require('./blue/159.jpg'),
+  },
+  '61': {
+    day: require('./blue/61.jpg'),
+    night: require('./blue/161.jpg'),
+  },
+  '64': {
+    day: require('./blue/64.jpg'),
+    night: require('./blue/164.jpg'),
+  },
+  '67': {
+    day: require('./blue/67.jpg'),
+    night: require('./blue/167.jpg'),
+  },
+  '71': {
+    day: require('./blue/171.jpg'),
+    night: require('./blue/171.jpg'),
+  },
+  '74': {
+    day: require('./blue/74.jpg'),
+    night: require('./blue/174.jpg'),
+  },
+  '77': {
+    day: require('./blue/77.jpg'),
+    night: require('./blue/177.jpg'),
+  },
+  'aurora': {
+    day: require('./blue/aurora.jpg'),
+    night: require('./blue/aurora.jpg'),
+  },
+};
+
 export const sunBackground:ImageSourcePropType = require('./sun.jpg');
 export const sunBackgroundDark:ImageSourcePropType = require('./sun-dark.jpg');
 
@@ -408,8 +594,10 @@ export const weatherBackgroundKeyParser = (key: string) => {
   return parsedKey;
 };
 
-export const weatherBackgroundGetter = (key: string, dark: boolean) => {
-  const symbolSet = dark ? backgroundsDark : backgroundsLight;
+export const weatherBackgroundGetter = (key: string, dark: boolean, blue = false) => {
+  let symbolSet = backgroundsLight;
+  if (dark) symbolSet = backgroundsDark;
+  if (blue) symbolSet = backgroundsBlue;
 
   if (key === 'aurora') {
     return symbolSet.aurora.night;
