@@ -359,14 +359,17 @@ export const backgroundsTablet: WeatherBackground = {
   '71': {
     day: require('./tablet/71.jpg'),
     night: require('./tablet/171.jpg'),
+    whiteText: true,
   },
   '74': {
     day: require('./tablet/74.jpg'),
     night: require('./tablet/174.jpg'),
+    whiteText: true,
   },
   '77': {
     day: require('./tablet/77.jpg'),
     night: require('./tablet/177.jpg'),
+    whiteText: true,
   },
   'aurora': {
     day: require('./tablet/aurora.jpg'),
@@ -546,14 +549,17 @@ export const backgroundsBlue: WeatherBackground = {
   '71': {
     day: require('./blue/171.jpg'),
     night: require('./blue/171.jpg'),
+    whiteText: true,
   },
   '74': {
     day: require('./blue/74.jpg'),
     night: require('./blue/174.jpg'),
+    whiteText: true,
   },
   '77': {
     day: require('./blue/77.jpg'),
     night: require('./blue/177.jpg'),
+    whiteText: true,
   },
   'aurora': {
     day: require('./blue/aurora.jpg'),
@@ -579,6 +585,7 @@ export type WeatherBackground = {
   [key: string]: {
     day: ImageSourcePropType;
     night: ImageSourcePropType;
+    whiteText?: boolean;
   };
 };
 
@@ -609,4 +616,9 @@ export const weatherBackgroundGetter = (key: string, tablet = false) => {
     return toReturn;
   }
   return undefined;
+};
+
+export const shouldUseWhiteText = (key: string, tablet = false) => {
+  const symbolSet = tablet ? backgroundsTablet : backgroundsPhone;
+  return symbolSet[key] && symbolSet[key].whiteText === true;
 };
