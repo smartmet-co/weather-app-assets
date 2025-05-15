@@ -496,12 +496,6 @@ export const moonPhaseImages = {
   waningCrescent: require('./waning_crescent.jpg'),
 };
 
-type ImageWithTextProperties = {
-  image: ImageSourcePropType;
-  whiteText?: boolean;
-  blackText?: boolean;
-}
-
 type TextColors = {
   day?: 'white' | 'black';
   night?: 'white' | 'black';
@@ -509,8 +503,8 @@ type TextColors = {
 
 export type WeatherBackground = {
   [key: string]: {
-    day: ImageSourcePropType | ImageWithTextProperties;
-    night: ImageSourcePropType | ImageWithTextProperties;
+    day: ImageSourcePropType;
+    night: ImageSourcePropType;
     textColors?: TextColors;
   };
 };
@@ -548,10 +542,10 @@ export const getOverrideTextColor = (key: string, tablet = false, night = false)
   const symbolSet = tablet ? backgroundsTablet : backgroundsPhone;
   const parsedKey = weatherBackgroundKeyParser(key);
 
-  if (night && symbolSet[parsedKey].textColors?.night) {
+  if (night && symbolSet[parsedKey]?.textColors?.night) {
     return symbolSet[parsedKey].textColors.night;
   }
-  if (!night && symbolSet[parsedKey].textColors?.day) {
+  if (!night && symbolSet[parsedKey]?.textColors?.day) {
     return symbolSet[parsedKey].textColors.day;
   }
 
