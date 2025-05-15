@@ -1,4 +1,4 @@
-import { ImageSourcePropType } from "react-native";
+import { ImageSourcePropType } from 'react-native';
 
 export const backgroundsPhone: WeatherBackground = {
   '1': {
@@ -24,6 +24,9 @@ export const backgroundsPhone: WeatherBackground = {
   '9': {
     day: require('./phone/9.jpg'),
     night: require('./phone/109.jpg'),
+    textColors: {
+      night: 'black',
+    }
   },
   '11': {
     day: require('./phone/11.jpg'),
@@ -40,14 +43,23 @@ export const backgroundsPhone: WeatherBackground = {
   '21': {
     day: require('./phone/21.jpg'),
     night: require('./phone/121.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '24': {
     day: require('./phone/24.jpg'),
     night: require('./phone/124.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '27': {
     day: require('./phone/27.jpg'),
     night: require('./phone/127.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '31': {
     day: require('./phone/31.jpg'),
@@ -56,34 +68,58 @@ export const backgroundsPhone: WeatherBackground = {
   '32': {
     day: require('./phone/32.jpg'),
     night: require('./phone/132.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '33': {
     day: require('./phone/33.jpg'),
     night: require('./phone/133.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '34': {
     day: require('./phone/34.jpg'),
     night: require('./phone/134.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '35': {
     day: require('./phone/35.jpg'),
     night: require('./phone/135.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '36': {
     day: require('./phone/36.jpg'),
     night: require('./phone/136.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '37': {
     day: require('./phone/37.jpg'),
     night: require('./phone/137.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '38': {
     day: require('./phone/38.jpg'),
     night: require('./phone/138.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '39': {
     day: require('./phone/39.jpg'),
     night: require('./phone/139.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '41': {
     day: require('./phone/41.jpg'),
@@ -96,6 +132,9 @@ export const backgroundsPhone: WeatherBackground = {
   '43': {
     day: require('./phone/43.jpg'),
     night: require('./phone/143.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '44': {
     day: require('./phone/44.jpg'),
@@ -104,10 +143,16 @@ export const backgroundsPhone: WeatherBackground = {
   '45': {
     day: require('./phone/45.jpg'),
     night: require('./phone/145.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '46': {
     day: require('./phone/46.jpg'),
     night: require('./phone/146.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '47': {
     day: require('./phone/47.jpg'),
@@ -168,18 +213,29 @@ export const backgroundsPhone: WeatherBackground = {
   '67': {
     day: require('./phone/67.jpg'),
     night: require('./phone/167.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '71': {
-    day: require('./phone/71.jpg'),
-    night: require('./phone/171.jpg'),
+    day: require('./tablet/71.jpg'),
+    night: require('./tablet/171.jpg'),
   },
   '74': {
     day: require('./phone/74.jpg'),
     night: require('./phone/174.jpg'),
+    textColors: {
+      day: 'white',
+      night: 'black'
+    },
   },
   '77': {
     day: require('./phone/77.jpg'),
     night: require('./phone/177.jpg'),
+    textColors: {
+      day: 'white',
+      night: 'black'
+    },
   },
   'aurora': {
     day: require('./phone/aurora.jpg'),
@@ -235,6 +291,9 @@ export const backgroundsTablet: WeatherBackground = {
   '27': {
     day: require('./tablet/27.jpg'),
     night: require('./tablet/127.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '31': {
     day: require('./tablet/31.jpg'),
@@ -243,10 +302,16 @@ export const backgroundsTablet: WeatherBackground = {
   '32': {
     day: require('./tablet/32.jpg'),
     night: require('./tablet/132.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '33': {
     day: require('./tablet/33.jpg'),
     night: require('./tablet/133.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '34': {
     day: require('./tablet/34.jpg'),
@@ -255,14 +320,23 @@ export const backgroundsTablet: WeatherBackground = {
   '35': {
     day: require('./tablet/35.jpg'),
     night: require('./tablet/135.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '36': {
     day: require('./tablet/36.jpg'),
     night: require('./tablet/136.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '37': {
     day: require('./tablet/37.jpg'),
     night: require('./tablet/137.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '38': {
     day: require('./tablet/38.jpg'),
@@ -271,6 +345,9 @@ export const backgroundsTablet: WeatherBackground = {
   '39': {
     day: require('./tablet/39.jpg'),
     night: require('./tablet/139.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '41': {
     day: require('./tablet/41.jpg'),
@@ -279,18 +356,30 @@ export const backgroundsTablet: WeatherBackground = {
   '42': {
     day: require('./tablet/42.jpg'),
     night: require('./tablet/142.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '43': {
     day: require('./tablet/43.jpg'),
     night: require('./tablet/143.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '44': {
     day: require('./tablet/44.jpg'),
     night: require('./tablet/144.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '45': {
     day: require('./tablet/45.jpg'),
     night: require('./tablet/145.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '46': {
     day: require('./tablet/46.jpg'),
@@ -299,14 +388,23 @@ export const backgroundsTablet: WeatherBackground = {
   '47': {
     day: require('./tablet/47.jpg'),
     night: require('./tablet/147.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '48': {
     day: require('./tablet/48.jpg'),
     night: require('./tablet/148.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '49': {
     day: require('./tablet/49.jpg'),
     night: require('./tablet/149.jpg'),
+    textColors: {
+      night: 'black',
+    },
   },
   '51': {
     day: require('./tablet/51.jpg'),
@@ -315,6 +413,9 @@ export const backgroundsTablet: WeatherBackground = {
   '52': {
     day: require('./tablet/52.jpg'),
     night: require('./tablet/152.jpg'),
+    textColors: {
+      day: 'white',
+    },
   },
   '53': {
     day: require('./tablet/53.jpg'),
@@ -359,211 +460,25 @@ export const backgroundsTablet: WeatherBackground = {
   '71': {
     day: require('./tablet/71.jpg'),
     night: require('./tablet/171.jpg'),
-    whiteText: true,
   },
   '74': {
     day: require('./tablet/74.jpg'),
     night: require('./tablet/174.jpg'),
-    whiteText: true,
+    textColors: {
+      day: 'white',
+    },
   },
   '77': {
     day: require('./tablet/77.jpg'),
     night: require('./tablet/177.jpg'),
-    whiteText: true,
+    textColors: {
+      day: 'white',
+      night: 'black',
+    },
   },
   'aurora': {
     day: require('./tablet/aurora.jpg'),
     night: require('./tablet/aurora.jpg'),
-  },
-};
-
-export const backgroundsBlue: WeatherBackground = {
-  '1': {
-    day: require('./blue/1.jpg'),
-    night: require('./blue/101.jpg'),
-  },
-  '2': {
-    day: require('./blue/2.jpg'),
-    night: require('./blue/102.jpg'),
-  },
-  '4': {
-    day: require('./blue/4.jpg'),
-    night: require('./blue/104.jpg'),
-  },
-  '6': {
-    day: require('./blue/6.jpg'),
-    night: require('./blue/106.jpg'),
-  },
-  '7': {
-    day: require('./blue/7.jpg'),
-    night: require('./blue/107.jpg'),
-  },
-  '9': {
-    day: require('./blue/9.jpg'),
-    night: require('./blue/109.jpg'),
-  },
-  '11': {
-    day: require('./blue/11.jpg'),
-    night: require('./blue/111.jpg'),
-  },
-  '14': {
-    day: require('./blue/14.jpg'),
-    night: require('./blue/114.jpg'),
-  },
-  '17': {
-    day: require('./blue/17.jpg'),
-    night: require('./blue/117.jpg'),
-  },
-  '21': {
-    day: require('./blue/21.jpg'),
-    night: require('./blue/121.jpg'),
-  },
-  '24': {
-    day: require('./blue/24.jpg'),
-    night: require('./blue/124.jpg'),
-  },
-  '27': {
-    day: require('./blue/27.jpg'),
-    night: require('./blue/127.jpg'),
-  },
-  '31': {
-    day: require('./blue/31.jpg'),
-    night: require('./blue/131.jpg'),
-  },
-  '32': {
-    day: require('./blue/32.jpg'),
-    night: require('./blue/132.jpg'),
-  },
-  '33': {
-    day: require('./blue/33.jpg'),
-    night: require('./blue/133.jpg'),
-  },
-  '34': {
-    day: require('./blue/34.jpg'),
-    night: require('./blue/134.jpg'),
-  },
-  '35': {
-    day: require('./blue/35.jpg'),
-    night: require('./blue/135.jpg'),
-  },
-  '36': {
-    day: require('./blue/36.jpg'),
-    night: require('./blue/136.jpg'),
-  },
-  '37': {
-    day: require('./blue/37.jpg'),
-    night: require('./blue/137.jpg'),
-  },
-  '38': {
-    day: require('./blue/38.jpg'),
-    night: require('./blue/138.jpg'),
-  },
-  '39': {
-    day: require('./blue/39.jpg'),
-    night: require('./blue/139.jpg'),
-  },
-  '41': {
-    day: require('./blue/41.jpg'),
-    night: require('./blue/141.jpg'),
-  },
-  '42': {
-    day: require('./blue/42.jpg'),
-    night: require('./blue/142.jpg'),
-  },
-  '43': {
-    day: require('./blue/43.jpg'),
-    night: require('./blue/143.jpg'),
-  },
-  '44': {
-    day: require('./blue/44.jpg'),
-    night: require('./blue/144.jpg'),
-  },
-  '45': {
-    day: require('./blue/45.jpg'),
-    night: require('./blue/145.jpg'),
-  },
-  '46': {
-    day: require('./blue/46.jpg'),
-    night: require('./blue/146.jpg'),
-  },
-  '47': {
-    day: require('./blue/47.jpg'),
-    night: require('./blue/147.jpg'),
-  },
-  '48': {
-    day: require('./blue/48.jpg'),
-    night: require('./blue/148.jpg'),
-  },
-  '49': {
-    day: require('./blue/49.jpg'),
-    night: require('./blue/149.jpg'),
-  },
-  '51': {
-    day: require('./blue/51.jpg'),
-    night: require('./blue/151.jpg'),
-  },
-  '52': {
-    day: require('./blue/52.jpg'),
-    night: require('./blue/152.jpg'),
-  },
-  '53': {
-    day: require('./blue/53.jpg'),
-    night: require('./blue/153.jpg'),
-  },
-  '54': {
-    day: require('./blue/54.jpg'),
-    night: require('./blue/154.jpg'),
-  },
-  '55': {
-    day: require('./blue/55.jpg'),
-    night: require('./blue/155.jpg'),
-  },
-  '56': {
-    day: require('./blue/56.jpg'),
-    night: require('./blue/156.jpg'),
-  },
-  '57': {
-    day: require('./blue/57.jpg'),
-    night: require('./blue/157.jpg'),
-  },
-  '58': {
-    day: require('./blue/58.jpg'),
-    night: require('./blue/158.jpg'),
-  },
-  '59': {
-    day: require('./blue/59.jpg'),
-    night: require('./blue/159.jpg'),
-  },
-  '61': {
-    day: require('./blue/61.jpg'),
-    night: require('./blue/161.jpg'),
-  },
-  '64': {
-    day: require('./blue/64.jpg'),
-    night: require('./blue/164.jpg'),
-  },
-  '67': {
-    day: require('./blue/67.jpg'),
-    night: require('./blue/167.jpg'),
-  },
-  '71': {
-    day: require('./blue/171.jpg'),
-    night: require('./blue/171.jpg'),
-    whiteText: true,
-  },
-  '74': {
-    day: require('./blue/74.jpg'),
-    night: require('./blue/174.jpg'),
-    whiteText: true,
-  },
-  '77': {
-    day: require('./blue/77.jpg'),
-    night: require('./blue/177.jpg'),
-    whiteText: true,
-  },
-  'aurora': {
-    day: require('./blue/aurora.jpg'),
-    night: require('./blue/aurora.jpg'),
   },
 };
 
@@ -581,11 +496,22 @@ export const moonPhaseImages = {
   waningCrescent: require('./waning_crescent.jpg'),
 };
 
+type ImageWithTextProperties = {
+  image: ImageSourcePropType;
+  whiteText?: boolean;
+  blackText?: boolean;
+}
+
+type TextColors = {
+  day?: 'white' | 'black';
+  night?: 'white' | 'black';
+}
+
 export type WeatherBackground = {
   [key: string]: {
-    day: ImageSourcePropType;
-    night: ImageSourcePropType;
-    whiteText?: boolean;
+    day: ImageSourcePropType | ImageWithTextProperties;
+    night: ImageSourcePropType | ImageWithTextProperties;
+    textColors?: TextColors;
   };
 };
 
@@ -618,7 +544,16 @@ export const weatherBackgroundGetter = (key: string, tablet = false) => {
   return undefined;
 };
 
-export const shouldUseWhiteText = (key: string, tablet = false) => {
+export const getOverrideTextColor = (key: string, tablet = false, night = false) : undefined | 'white' | 'black' => {
   const symbolSet = tablet ? backgroundsTablet : backgroundsPhone;
-  return symbolSet[key] && symbolSet[key].whiteText === true;
+  const parsedKey = weatherBackgroundKeyParser(key);
+
+  if (night && symbolSet[parsedKey].textColors?.night) {
+    return symbolSet[parsedKey].textColors.night;
+  }
+  if (!night && symbolSet[parsedKey].textColors?.day) {
+    return symbolSet[parsedKey].textColors.day;
+  }
+
+  return undefined;
 };
