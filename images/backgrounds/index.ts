@@ -543,10 +543,10 @@ export const getOverrideTextColor = (key: string, tablet = false, night = false)
   const parsedKey = weatherBackgroundKeyParser(key);
 
   if (night && symbolSet[parsedKey]?.textColors?.night) {
-    return symbolSet[parsedKey].textColors.night;
+    return symbolSet[parsedKey]?.textColors?.night;
   }
   if (!night && symbolSet[parsedKey]?.textColors?.day) {
-    return symbolSet[parsedKey].textColors.day;
+    return symbolSet[parsedKey]?.textColors?.day;
   }
 
   return undefined;
