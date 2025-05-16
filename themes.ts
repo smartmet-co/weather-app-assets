@@ -3,9 +3,9 @@ import {
   SECONDARY_BLUE,
   GRAYISH_BLUE,
   LIGHT_BLUE,
-  LIGHT_BLUE_OPACITY_50,
   WHITE,
   GRAY_11,
+  GRAY_11_OPACITY_50,
   GRAY_8,
   GRAY_7,
   GRAY_6,
@@ -87,6 +87,7 @@ export const lightTheme = {
     selectedButton: WHITE,
     warningCard: '#E8EFF5',
     warningCardBorder: MEDIUM_BLUE,
+    weatherButtonBackground: GRAY_11_OPACITY_50,
   },
 };
 
@@ -142,6 +143,7 @@ export const darkTheme = {
     selectedButton: BLACK,
     warningCard: GRAY_6,
     warningCardBorder: GRAY_4,
+    weatherButtonBackground: GRAY_4_OPACITY_50,
   },
 };
 
@@ -197,5 +199,6 @@ export const blueTheme = {
     selectedButton: '#1F2060',
     warningCard: 'rgba(76, 76, 103, 0.6)',
     warningCardBorder: 'rgb(147, 184, 209)',
+    weatherButtonBackground: GRAY_4_OPACITY_50,
   },
 };

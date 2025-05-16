@@ -40,6 +40,7 @@ export const GRAY_6_95 = 'rgba(28,28,30,0.95)';
 
 export const GRAY_9_OPACITY_10 ='rgba(134, 134, 134, 0.10)';
 export const GRAY_10_OPACITY_60 ='rgba(44, 47, 50, 0.60)';
+export const GRAY_11_OPACITY_50 = 'rgba(245, 245, 245, 0.5)';
 
 export const BLACK_OPACITY = 'rgba(0,0,0,0.07)';
 export const BLACK_TRANSPARENT = 'rgba(0,0,0,0.0)';
@@ -201,6 +202,7 @@ export type CustomTheme = {
     selectedButton: string;
     warningCard: string;
     warningCardBorder: string;
+    weatherButtonBackground: string;
   };
 };
 
