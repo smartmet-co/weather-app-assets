@@ -203,6 +203,7 @@ export type CustomTheme = {
     warningCard: string;
     warningCardBorder: string;
     weatherButtonBackground: string;
+    meteorologistSnapshotCard: string;
   };
 };
 

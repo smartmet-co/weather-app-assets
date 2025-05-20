@@ -88,6 +88,7 @@ export const lightTheme = {
     warningCard: '#E8EFF5',
     warningCardBorder: MEDIUM_BLUE,
     weatherButtonBackground: GRAY_11_OPACITY_50,
+    meteorologistSnapshotCard: '#f3f3f3',
   },
 };
 
@@ -144,6 +145,7 @@ export const darkTheme = {
     warningCard: GRAY_6,
     warningCardBorder: GRAY_4,
     weatherButtonBackground: GRAY_4_OPACITY_50,
+    meteorologistSnapshotCard: GRAY_6,
   },
 };
 
@@ -200,5 +202,6 @@ export const blueTheme = {
     warningCard: 'rgba(76, 76, 103, 0.6)',
     warningCardBorder: 'rgb(147, 184, 209)',
     weatherButtonBackground: GRAY_4_OPACITY_50,
+    meteorologistSnapshotCard: 'rgba(76, 76, 103, 0.6)',
   },
 };
