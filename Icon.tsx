@@ -151,7 +151,7 @@ import FloodWarning from '@assets/images/icons/warnings/warnings_flood.svg';
 import GrassFireWeatherWarning from '@assets/images/icons/warnings/warnings_grass_fire_weather.svg';
 import PedestrianSafetyWarning from '@assets/images/icons/warnings/warnings_pedestrian_safety.svg';
 import ColdWeatherWarning from '@assets/images/icons/warnings/warnings_cold_weather.svg';
-import RaingWarning from '@assets/images/icons/warnings/warnings_rain.svg';
+import RainWarning from '@assets/images/icons/warnings/warnings_rain.svg';
 import IcingWarning from '@assets/images/icons/warnings/warnings_icing.svg';
 import ThunderstormWarning from '@assets/images/icons/warnings/warnings_thunder_storm.svg';
 import SeaWaterHeightHighWarning from '@assets/images/icons/warnings/warnings_sea_water_height_high.svg';
@@ -474,14 +474,14 @@ const Icon: React.FC<CustomIconProps> = ({ name, ...props }) => {
     case 'fmi-warnings-pedestrianSafety':
       return <PedestrianSafetyWarning {...(props as SvgProps)} />;
     case 'fmi-warnings-rain':
-      return <RaingWarning {...(props as SvgProps)} />;
-    case 'fmi-warnings-sea-water-height-high':
+      return <RainWarning {...(props as SvgProps)} />;
+    case 'fmi-warnings-seaWaterHeightHigh':
       return <SeaWaterHeightHighWarning {...(props as SvgProps)} />;
-    case 'fmi-warnings-sea-water-height-shallow':
+    case 'fmi-warnings-seaWaterHeightShallow':
       return <SeaWaterHeightShallowWarning {...(props as SvgProps)} />;
-    case 'fmi-warnings-sea-wave-height':
+    case 'fmi-warnings-seaWaveHeight':
       return <SeaWaveHeightWarning {...(props as SvgProps)} />;
-    case 'fmi-warnings-sea-wind':
+    case 'fmi-warnings-seaWind':
       return <SeaWindWarning {...(props as SvgProps)} />;
     case 'fmi-warnings-thunderstorm':
       return <ThunderstormWarning {...(props as SvgProps)} />;
