@@ -471,18 +471,22 @@ const Icon: React.FC<CustomIconProps> = ({ name, ...props }) => {
       return <HotWeatherWarning {...(props as SvgProps)} />;
     case 'fmi-warnings-icing':
       return <IcingWarning {...(props as SvgProps)} />;
+    case 'fmi-warnings-seaIcing':
+      return <IcingWarning {...(props as SvgProps)} />;
     case 'fmi-warnings-pedestrianSafety':
       return <PedestrianSafetyWarning {...(props as SvgProps)} />;
     case 'fmi-warnings-rain':
       return <RainWarning {...(props as SvgProps)} />;
-    case 'fmi-warnings-seaWaterHeightHigh':
+    case 'fmi-warnings-seaWaterHeightHighWater':
       return <SeaWaterHeightHighWarning {...(props as SvgProps)} />;
-    case 'fmi-warnings-seaWaterHeightShallow':
+    case 'fmi-warnings-seaWaterHeightShallowWater':
       return <SeaWaterHeightShallowWarning {...(props as SvgProps)} />;
     case 'fmi-warnings-seaWaveHeight':
       return <SeaWaveHeightWarning {...(props as SvgProps)} />;
     case 'fmi-warnings-seaWind':
       return <SeaWindWarning {...(props as SvgProps)} />;
+    case 'fmi-warnings-seaThunderStorm':
+      return <ThunderstormWarning {...(props as SvgProps)} />;
     case 'fmi-warnings-thunderstorm':
       return <ThunderstormWarning {...(props as SvgProps)} />;
     case 'fmi-warnings-trafficWeather':
