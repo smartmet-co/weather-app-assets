@@ -160,6 +160,22 @@ export type Rain = {
   8: string;
 };
 
+type FontStyle = {
+  fontFamily: string;
+  fontWeight:
+    | 'normal'
+    | 'bold'
+    | '100'
+    | '200'
+    | '300'
+    | '400'
+    | '500'
+    | '600'
+    | '700'
+    | '800'
+    | '900';
+};
+
 export type CustomTheme = {
   dark: boolean;
   blue: boolean;
@@ -204,6 +220,12 @@ export type CustomTheme = {
     warningCardBorder: string;
     weatherButtonBackground: string;
     meteorologistSnapshotCard: string;
+  },
+  fonts: {
+    regular: FontStyle;
+    medium: FontStyle;
+    bold: FontStyle;
+    heavy: FontStyle;
   };
 };
 
