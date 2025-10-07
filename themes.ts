@@ -34,6 +34,28 @@ import {
   GRAY_4_OPACITY_50,
   MEDIUM_BLUE,
 } from '@assets/colors';
+import { Platform } from 'react-native';
+
+const fonts = Platform.select({
+  default: {
+    regular: {
+      fontFamily: 'Roboto-Regular',
+      fontWeight: '400' as const,
+    },
+    medium: {
+      fontFamily: 'Roboto-Medium',
+      fontWeight: '500' as const,
+    },
+    bold: {
+      fontFamily: 'Roboto-Bold',
+      fontWeight: '600' as const,
+    },
+    heavy: {
+      fontFamily: 'Roboto-Bold',
+      fontWeight: '700' as const,
+    },
+  }
+});
 
 export const lightTheme = {
   dark: false,
@@ -90,6 +112,7 @@ export const lightTheme = {
     weatherButtonBackground: GRAY_11_OPACITY_50,
     meteorologistSnapshotCard: '#f3f3f3',
   },
+  fonts
 };
 
 export const darkTheme = {
@@ -147,6 +170,7 @@ export const darkTheme = {
     weatherButtonBackground: GRAY_4_OPACITY_50,
     meteorologistSnapshotCard: GRAY_6,
   },
+  fonts,
 };
 
 export const blueTheme = {
@@ -204,4 +228,5 @@ export const blueTheme = {
     weatherButtonBackground: GRAY_4_OPACITY_50,
     meteorologistSnapshotCard: 'rgba(76, 76, 103, 0.6)',
   },
+  fonts,
 };
