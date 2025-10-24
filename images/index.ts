@@ -515,10 +515,19 @@ export const symbolsDark: WeatherSymbol = {
   },
 };
 
+export const providerLogos: LanguageSpecificImage = {};
+
 export type WeatherSymbol = {
   [key: string]: {
     day: React.FC<SvgProps>;
     night: React.FC<SvgProps>;
+  };
+};
+
+export type LanguageSpecificImage = {
+  [lang: string]: {
+    light: string;
+    dark: string;
   };
 };
 
