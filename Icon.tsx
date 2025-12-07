@@ -30,7 +30,7 @@ import Locate from '@assets/images/icons/locate.svg';
 import MaintenanceStripIcon from '@assets/images/icons/maintenance-strip-icon.svg';
 import MapMarker from '@assets/images/icons/map-marker.svg';
 import Map from '@assets/images/icons/map.svg';
-import Menu from '@assets/images/icons/menu.svg';
+import Menu from '@assets/images/icons/gear.svg';
 import Mic from '@assets/images/icons/mic.svg';
 import MidnightSun from '@assets/images/icons/midnight-sun.svg';
 import Minus from '@assets/images/icons/minus.svg';
