@@ -381,6 +381,12 @@ const Icon: React.FC<CustomIconProps> = ({ name, ...props }) => {
         return <WarningsRainfallWatch {...(props as SvgProps)} />;
     case 'warnings-rainfall-warning' :
         return <WarningsRainfallWarning {...(props as SvgProps)} />;
+    case 'warnings-flash-flood-probability-advisory' :
+        return <WarningsFlashFloodProbabilityAdvisory {...(props as SvgProps)} />;
+    case 'warnings-flash-flood-probability-watch' :
+        return <WarningsFlashFloodProbabilityWatch {...(props as SvgProps)} />;
+    case 'warnings-flash-flood-probability-warning' :
+        return <WarningsFlashFloodProbabilityWarning {...(props as SvgProps)} />;
     case 'warnings-flash-flood-advisory' :
         return <WarningsFlashFloodAdvisory {...(props as SvgProps)} />;
     case 'warnings-flash-flood-watch' :
