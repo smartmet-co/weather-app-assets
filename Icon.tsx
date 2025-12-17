@@ -106,6 +106,9 @@ import WarningsHighTemperatureWarning from '@assets/images/warning icons/high te
 import WarningsRainfallAdvisory from '@assets/images/warning icons/rainfall advisory.svg';
 import WarningsRainfallWatch from '@assets/images/warning icons/rainfall watch.svg';
 import WarningsRainfallWarning from '@assets/images/warning icons/rainfall warning.svg';
+import WarningsFlashFloodProbabilityAdvisory from '@assets/images/warning icons/flash flood probability advisory.svg';
+import WarningsFlashFloodProbabilityWatch from '@assets/images/warning icons/flash flood probability watch.svg';
+import WarningsFlashFloodProbabilityWarning from '@assets/images/warning icons/flash flood probability warning.svg';
 import WarningsFlashFloodAdvisory from '@assets/images/warning icons/flash flood advisory.svg';
 import WarningsFlashFloodWatch from '@assets/images/warning icons/flash flood watch.svg';
 import WarningsFlashFloodWarning from '@assets/images/warning icons/flash flood warning.svg';
