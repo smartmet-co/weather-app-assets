@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleProp, TextStyle, ViewStyle } from 'react-native';
+import { Image, StyleSheet, StyleProp, TextStyle, ViewStyle } from 'react-native';
 
 import IonIcon from 'react-native-vector-icons/Ionicons';
 import { IconProps } from 'react-native-vector-icons/Icon';
@@ -52,13 +52,12 @@ import Search from '@assets/images/icons/search.svg';
 import Settings from '@assets/images/icons/settings.svg';
 import Snow from '@assets/images/icons/snow.svg';
 import SocialInstagramDark from '@assets/images/icons/social-instagram-dark.svg';
-import SocialTwitterDark from '@assets/images/icons/social-x-logo-dark.svg';
-import SocialYoutubeDark from '@assets/images/icons/social-youtube-dark.svg';
-import SocialFacebookDark from '@assets/images/icons/social-facebook-dark.svg';
+import SocialFacebook from '@assets/images/icons/social-facebook.svg';
 import SocialInstagramLight from '@assets/images/icons/social-instagram-light.svg';
-import SocialTwitterLight from '@assets/images/icons/social-x-logo-light.svg';
-import SocialYoutubeLight from '@assets/images/icons/social-youtube-light.svg';
-import SocialFacebookLight from '@assets/images/icons/social-facebook-light.svg';
+import SocialYoutube from '@assets/images/icons/social-youtube.svg';
+import SocialTikTokLight from '@assets/images/icons/social-tiktok-light.svg';
+import SocialTikTokDark from '@assets/images/icons/social-tiktok-dark.svg';
+import SocialLinkedIn from '@assets/images/icons/social-linkedin.svg';
 import StarSelected from '@assets/images/icons/star-selected.svg';
 import StarUnselected from '@assets/images/icons/star-unselected.svg';
 import SunArrowDown from '@assets/images/icons/sun-arrow-down.svg';
@@ -169,6 +168,11 @@ import FeelsLikeXmas from '@assets/images/feelslike/xmas.svg';
 
 import { SvgProps } from 'react-native-svg';
 
+// PNG icons
+
+const SocialXLight = require('@assets/images/icons/social-x-light.png');
+const SocialXDark = require('@assets/images/icons/social-x-dark.png');
+
 type CustomIconProps = IconProps & {
   name: string;
   width?: number;
@@ -275,20 +279,28 @@ const Icon: React.FC<CustomIconProps> = ({ name, ...props }) => {
       return <Snow {...(props as SvgProps)} />;
     case 'social-instagram-dark':
       return <SocialInstagramDark {...(props as SvgProps)} />;
-    case 'social-twitter-dark':
-      return <SocialTwitterDark {...(props as SvgProps)} />;
+    case 'social-x-dark':
+      return <Image source={SocialXDark} resizeMode="contain" style={styles.socialMedia} />
     case 'social-youtube-dark':
-      return <SocialYoutubeDark {...(props as SvgProps)} />;
+      return <SocialYoutube {...(props as SvgProps)} />;
     case 'social-facebook-dark':
-      return <SocialFacebookDark {...(props as SvgProps)} />;
+      return <SocialFacebook{...(props as SvgProps)} />;
+    case 'social-tiktok-dark':
+      return <SocialTikTokDark {...(props as SvgProps)} />;
+    case 'social-linkedin-dark':
+      return <SocialLinkedIn {...(props as SvgProps)} />;
     case 'social-instagram-light':
       return <SocialInstagramLight {...(props as SvgProps)} />;
-    case 'social-twitter-light':
-      return <SocialTwitterLight {...(props as SvgProps)} />;
+    case 'social-x-light':
+      return <Image source={SocialXLight} resizeMode="contain" style={styles.socialMedia} />
     case 'social-youtube-light':
-      return <SocialYoutubeLight {...(props as SvgProps)} />;
+      return <SocialYoutube {...(props as SvgProps)} />;
     case 'social-facebook-light':
-      return <SocialFacebookLight {...(props as SvgProps)} />;
+      return <SocialFacebook {...(props as SvgProps)} />;
+    case 'social-tiktok-light':
+      return <SocialTikTokLight {...(props as SvgProps)} />;
+    case 'social-linkedin-light':
+      return <SocialLinkedIn {...(props as SvgProps)} />;
     case 'star-selected':
       return <StarSelected {...(props as SvgProps)} />;
     case 'star-unselected':
@@ -496,5 +508,12 @@ const Icon: React.FC<CustomIconProps> = ({ name, ...props }) => {
       return <IonIcon name={name} {...props} />;
   }
 };
+
+const styles = StyleSheet.create({
+  socialMedia: {
+    width: 35,
+    height: 35,
+  },
+});
 
 export default Icon;
