@@ -1,3 +1,13 @@
+export const PRIMARY_LIGHT = "#0090FF";
+export const SECONDARY_LIGHT = "#B2DEFF";
+export const TERTIARY_LIGHT = "#00C69B";
+export const QUATERNARY_LIGHT = "#FFFFFF";
+
+export const PRIMARY_DARK = "#0090FF";
+export const SECONDARY_DARK = "#003A66";
+export const TERTIARY_DARK = "#00C69B";
+export const QUATERNARY_DARK = "#001626";
+
 export const PRIMARY_BLUE = '#303193';
 export const SECONDARY_BLUE = '#3A66E3';
 export const GRAYISH_BLUE = '#D8E7F2'; // line-light-mode
@@ -65,26 +75,6 @@ export const CAP_WARNING_NEUTRAL = '#E4F7F3';
 export const CAP_WARNING_YELLOW = '#FFFB7B';
 export const CAP_WARNING_ORANGE = '#FFCB5F';
 export const CAP_WARNING_RED = '#FF5A5A';
-
-/*
-export const RAIN_1_LIGHT = '#3A698E';
-export const RAIN_2_LIGHT = '#6BB1C9';
-export const RAIN_3_LIGHT = '#C5FBF2';
-export const RAIN_4_LIGHT = '#589D6B';
-export const RAIN_5_LIGHT = '#F9F961';
-export const RAIN_6_LIGHT = '#D29F00';
-export const RAIN_7_LIGHT = '#AE5200';
-export const RAIN_8_LIGHT = '#760000';
-
-export const RAIN_1_DARK = '#C1FAFB';
-export const RAIN_2_DARK = '#6BB1C9';
-export const RAIN_3_DARK = '#247DA2';
-export const RAIN_4_DARK = '#6BC37E';
-export const RAIN_5_DARK = '#F9F961';
-export const RAIN_6_DARK = '#D29F00';
-export const RAIN_7_DARK = '#AE5200';
-export const RAIN_8_DARK = '#760000';
-*/
 
 export const RAIN_1 = '#ABF4F4';
 export const RAIN_2 = '#3FA9D1';
