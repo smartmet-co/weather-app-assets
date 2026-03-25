@@ -142,25 +142,25 @@ export const typeMap: { [key in WarningType]: string } = {
 };
 
 export const landEvents = [
-  "Landslide",
-  "Forest fire",
-  "Low temperature",
-  "High temperature",
-  "Rainfall",
-  "Disturbance",
-  "Tropical depression",
-  "Tropical storm",
-  "Hurricane",
-  "Post-tropical cyclone",
-];
+  'Landslide',
+  'Forest fire',
+  'Low temperature',
+  'High temperature',
+  'Rainfall',
+  'Disturbance',
+  'Tropical depression',
+  'Tropical storm',
+  'Hurricane',
+  'Post-tropical cyclone',
+] as const;
 
 export const seaEvents = [
-  "Rainfall",
-  "Wind and waves",
-  "High tide",
-  "Disturbance",
-  "Tropical depression",
-  "Tropical storm",
-  "Hurricane",
-  "Post-tropical cyclone",
-];
+  'Rainfall',
+  'Wind and waves',
+  'High tide',
+  'Disturbance',
+  'Tropical depression',
+  'Tropical storm',
+  'Hurricane',
+  'Post-tropical cyclone',
+] as const;
