@@ -1,7 +1,6 @@
 const aboutTheApplicationEn = `
-# About the Application
-
-In English
+# App of the Institute of Hydrology, Meteorology and Environmental Studies (IDEAM)
+Our weather application provides meteorological information for almost all municipalities in Colombia. If you enable location on your phone, the service will automatically display the forecast for your location for up to 10 days. Are you only interested in temperature, or would you also like information on pressure, wind gusts, or the UV index? Both weather forecasts and meteorological observations allow you to choose which data you want to view. You can also save your favorite locations in Colombia and abroad in the app and access them easily. The information is available in tables and charts. Animations in the map section allow you to follow, for example, the movement of rain areas, and the rain forecast based on radar images that show the direction in which rainfall will move in the coming hours. The service displays current weather warnings for your selected location, and you can also easily check official weather warnings across Colombia.
 `;
 
 export default aboutTheApplicationEn;
