@@ -1,6 +1,5 @@
 const termsEn = `
-**POLICY ON THE PUBLICATION OF DATA, DRAFT PRODUCTS, AND OFFICIAL PRODUCTS ON THE WEBSITE**
-
+# Policy on the publication of data, draft products and official products on the website
 IDEAM, in line with its objective of promoting a culture of transparency, adopts the principle of proactive disclosure of information. This principle encourages entities and institutions to publish and disseminate documents and records that reflect state activities and matters of public interest in a widespread, routine, updated, accessible, and understandable manner. The use of electronic media is highlighted as a fundamental tool to facilitate and enhance this disclosure of public information, ensuring that it is available to all citizens effectively and efficiently.
 
 The publication scheme serves as the instrument to inform citizens about the availability of public information, detailing the management and dissemination of such information. This scheme is regulated by Law 1712 of 2014, known as the Transparency and Access to National Public Information Law, which establishes the relevant regulations to guarantee access to information for all citizens.
@@ -19,18 +18,20 @@ In accordance with the current regulations on transparency and access to informa
 
 The following are the terms of a legal agreement for those who access this website. By accessing, browsing, or using this site, you acknowledge that you have read, understood, and agreed to comply with IDEAM's data protection policy, these terms, and all applicable regulations and laws.
 
-**Principles**
+## Principles
+### Principle of Facilitation
+Data controllers must facilitate the exercise of the right of access to information, excluding requirements that may obstruct or hinder it.
 
-**Principle of Facilitation:** Data controllers must facilitate the exercise of the right of access to information, excluding requirements that may obstruct or hinder it.
+### Principle of Non-Discrimination
+The data controller must provide information to all persons who request it, under equal conditions and without arbitrary distinctions.
 
-**Principle of Non-Discrimination:** The data controller must provide information to all persons who request it, under equal conditions and without arbitrary distinctions.
+### Principle of Free Access
+Access to information is free of charge, and no fees may be charged beyond the cost of reproducing the information.
 
-**Principle of Free Access:** Access to information is free of charge, and no fees may be charged beyond the cost of reproducing the information.
+### Principle of Promptness
+This principle seeks agility in administrative procedures and management.
 
-**Principle of Promptness:** This principle seeks agility in administrative procedures and management.
-
-**1. Terms of Use**
-
+## 1. Terms of Use
 1.1 THE INSTITUTE OF HYDROLOGY, METEOROLOGY AND ENVIRONMENTAL STUDIES (IDEAM) may, without prior notice and at any time, revise these Terms of Use and any other information contained on this website by updating the Data Publication Policy.
 
 1.2 IDEAM may also make improvements or changes to the services or programs described on this site at any time and without prior notice.
@@ -63,7 +64,7 @@ Users who use, exploit, and/or transform the data and/or information from this w
 
 1.12 IDEAM has adopted the legally required security levels and implemented the necessary technical and organizational measures to prevent loss, misuse, alteration, unauthorized access, and theft of the data provided.
 
-**2. Modifications to the Terms of Use**
+## 2. Modifications to the Terms of Use
 
 2.1 IDEAM reserves the right to modify or correct the content of the terms and this website at any time and without prior notice to users.
 
