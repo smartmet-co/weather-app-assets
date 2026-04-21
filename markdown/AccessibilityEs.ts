@@ -29,8 +29,6 @@ La aplicación proporciona información meteorológica basada en mapas. Según l
 
 La aplicación fue publicada el 25 de mayo de 2026. 
 Esta declaración fue preparada el 9 de abril de 2026.
-
-(TODO do we need to add links to accessibility regulations or something?)
 `;
 
 export default accessibilityEs;
