@@ -615,6 +615,9 @@
     "showBuiltInLocationPermissionQuestion": "Siguiente"
   },
   "onboarding": {
+    "language": "Idioma",
+    "es": "Español",
+    "en": "English",
     "next": "Siguiente",
     "skip": "Saltar",
     "weatherTitle": "Pronóstico del tiempo y observaciones meteorológicas",
