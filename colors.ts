@@ -76,6 +76,11 @@ export const CAP_WARNING_YELLOW = '#FFFB7B';
 export const CAP_WARNING_ORANGE = '#FFCB5F';
 export const CAP_WARNING_RED = '#FF5A5A';
 
+export const CRISIS_BG = '#F8D7DA';
+export const CRISIS_TEXT = '#940214';
+export const MAINTENANCE_BG = '#CBF1F5';
+export const MAINTENANCE_TEXT = '#0B5B71';
+
 export const RAIN_1 = '#ABF4F4';
 export const RAIN_2 = '#3FA9D1';
 export const RAIN_3 = '#0765B5';
