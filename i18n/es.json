@@ -27,7 +27,7 @@
       "precipitation": "Precipitación",
       "precipitationAccessibilityLabel": " Abrir la gráfica de Precipitación",
       "precipitationLight": "Precipitación ({{ unit }}), lluvia ligera",
-      "precipitationModerate": "Precipitación ({{ unit }}), e moderada",
+      "precipitationModerate": "Precipitación ({{ unit }}), moderada",
       "precipitationHeavy": "Precipitación ({{ unit }}), lluvia fuerte",
       "pop": "Probabilidad de precipitación (%)",
       "wind": "Viento",
