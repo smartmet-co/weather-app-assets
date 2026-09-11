@@ -52,7 +52,12 @@
       "rrday": "Precipitation"
     },
     "parameter": "Parameter",
-    "loading": "Loading content"
+    "loading": "Loading content",
+    "enosLinkPanel": {
+      "title": "",
+      "description": "",
+      "accessibilityHint": "Opens the El Niño microsite"
+    }
   },
   "forecast": {
     "nextHourForecast": "Forecast",
