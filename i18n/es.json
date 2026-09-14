@@ -291,7 +291,8 @@
     "slash": "de",
     "locatedTo": "Ubicado en:",
     "navigateTo": "Ir a:",
-    "open": "Abrír"
+    "open": "Abrír",
+    "enosLink": "El Niño"
   },
   "about": {
     "versionInfo": "Versión de la aplicación",
