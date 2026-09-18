@@ -52,7 +52,12 @@
       "rrday": "Precipitación"
     },
     "parameter": "Parámetro",
-    "loading": "Descargando el contenido"
+    "loading": "Descargando el contenido",
+    "enosLinkPanel": {
+      "title": "TODO\nSOBRE EL NIÑO,\nEN UN SOLO LUGAR",
+      "buttonText": "Consulta la información oficial aquí",
+      "accessibilityHint": "Abre el micrositio de El Niño"
+    }
   },
   "forecast": {
     "nextHourForecast": "Pronóstico",
@@ -286,7 +291,8 @@
     "slash": "de",
     "locatedTo": "Ubicado en:",
     "navigateTo": "Ir a:",
-    "open": "Abrír"
+    "open": "Abrír",
+    "enosLink": "El Niño"
   },
   "about": {
     "versionInfo": "Versión de la aplicación",
