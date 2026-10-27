@@ -12,7 +12,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const CHUNK_SIZE = 50000;
+const CHUNK_SIZE = 45000;
 const HERMES_ARRAY_LITERAL_LIMIT = 65535;
 
 const LOCATIONS_DIR = path.join(__dirname, '../locations');
