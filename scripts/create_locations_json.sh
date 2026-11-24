@@ -99,3 +99,6 @@ def round_coord:
 rm -f $TMP_DIR/*.json
 
 echo "Created $OUTPUT_DIR/locations.json"
+
+# Split into chunks: Hermes can't handle a single array literal over 65,535 objects
+node "$SCRIPT_DIR/split_locations_json.js"
